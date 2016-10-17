@@ -4,7 +4,7 @@
     "name": "Aslan Vatsaev",
     "url": "@avatsaev"
   },
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "NativeScript Master Detail Angular2 template",
   "license": "Apache-2.0",
   "main": "main.js",
