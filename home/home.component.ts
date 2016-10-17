@@ -21,7 +21,6 @@ export class HomeComponent implements OnInit {
   }
 
   showDetails(e){
-    console.dir(this.countries[e.index]);
     this.router.navigate(["details", e.index])
   }
 
