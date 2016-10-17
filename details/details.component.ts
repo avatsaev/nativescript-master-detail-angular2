@@ -1,6 +1,7 @@
 import { Component,  OnInit} from "@angular/core";
 
 import {ActivatedRoute} from '@angular/router'
+import {DataService} from "../shared/data.service";
 
 
 @Component({
@@ -12,8 +13,13 @@ import {ActivatedRoute} from '@angular/router'
 export class DetailsComponent implements OnInit {
 
   item_id:number;
+  country:any;
 
-  constructor(private route:ActivatedRoute){
+
+  constructor(
+      private route:ActivatedRoute,
+      private data_service:DataService
+  ){
 
   }
 
@@ -21,6 +27,7 @@ export class DetailsComponent implements OnInit {
 
     this.route.params.subscribe(params => {
       this.item_id = params['id'];
+      this.country = this.data_service.get_data()[this.item_id]
     })
 
   }

@@ -1,5 +1,6 @@
-import { Component, ElementRef, OnInit, ViewChild } from "@angular/core";
+import { Component, OnInit } from "@angular/core";
 import { Router } from "@angular/router";
+import { DataService } from "../shared/data.service";
 
 
 @Component({
@@ -10,30 +11,21 @@ import { Router } from "@angular/router";
 
 export class HomeComponent implements OnInit {
 
-  @ViewChild("initialContainer") initialContainer: ElementRef;
-  @ViewChild("mainContainer") mainContainer: ElementRef;
-
-
   countries:Array<string>;
 
-  private router:Router;
-
-  constructor(router: Router){
+  constructor(
+      private router: Router,
+      private data_service: DataService
+  ){
     this.router = router;
-  }
 
+  }
 
   showDetails(e){
     this.router.navigate(["details", e.index])
   }
 
   ngOnInit(){
-
-    this.countries = ["Austria",
-      "Belgium", "Bulgaria", "Croatia", "Cyprus", "Czech Republic",
-      "Denmark", "Estonia", "Finland", "France","Germany", "Greece", "Hungary", "Ireland", "Italy",
-      "Latvia", "Lithuania", "Luxembourg", "Malta", "Netherlands","Poland", "Portugal", "Romania", "Slovakia",
-      "Slovenia","Spain", "Sweden", "United Kingdom"];
-
+    this.countries = this.data_service.get_data()
   }
 }
