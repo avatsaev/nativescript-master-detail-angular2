@@ -1,0 +1,49 @@
+{
+  "name": "nativescript-master-detail-angular2",
+  "author": {
+    "name": "Aslan Vatsaev",
+    "url": "@avatsaev"
+  },
+  "main": "main.js",
+  "version": "1.0.1",
+  "description": "NativeScript Master Detail Angular2 template",
+  "license": "Apache-2.0",
+  "keywords": [
+    "avatsaev",
+    "mobile",
+    "nativescript",
+    "{N}",
+    "tns",
+    "appbuilder",
+    "template",
+    "angular2"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/avatsaev/nativescript-master-detail-angular2.git"
+  },
+  "nativescript": {
+    "id": "com.vatsaev.nativescript_master_detail_angular2",
+    "tns-ios": {
+      "version": "2.3.0"
+    }
+  },
+  "dependencies": {
+    "@angular/common": "2.1.0",
+    "@angular/compiler": "2.1.0",
+    "@angular/core": "2.1.0",
+    "@angular/forms": "2.1.0",
+    "@angular/http": "2.1.0",
+    "@angular/platform-browser": "2.1.0",
+    "@angular/platform-browser-dynamic": "2.1.0",
+    "@angular/router": "3.1.0",
+    "nativescript-angular": "1.1.0",
+    "reflect-metadata": "~0.1.8",
+    "tns-core-modules": "2.3.0"
+  },
+  "devDependencies": {
+    "nativescript-dev-typescript": "^0.3.2",
+    "typescript": "^2.0.3",
+    "zone.js": "~0.6.21"
+  }
+}

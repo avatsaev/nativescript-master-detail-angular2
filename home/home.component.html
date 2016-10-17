@@ -1,0 +1,26 @@
+<ActionBar title="Home">
+
+</ActionBar>
+
+<GridLayout>
+
+  <StackLayout #initialContainer
+               class="initial-container">
+
+    <ListView [items]="countries" (itemTap)="showDetails($event)" rowHeight="44">
+
+      <template let-country="item" let-i="index" let-odd="odd" let-even="even">
+
+        <GridLayout class="visible" horizontalAlignment="stretch" verticalAlignment="center" paddingLeft="20" height="44">
+          <Label [text]="country" horizontalAlignment="left" verticalAlignment="center" class="label-item"></Label>
+        </GridLayout>
+
+      </template>
+
+    </ListView>
+
+  </StackLayout>
+
+
+
+</GridLayout>
