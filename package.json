@@ -1,7 +1,23 @@
 {
+  "name": "nativescript-master-detail-angular2",
+  "author": "Aslan Vatsaev (@avatsaev)",
+  "version": "1.0.0",
   "description": "NativeScript Master Detail Angular2 template",
-  "license": "MIT",
-  "repository": "",
+  "license": "Apache-2.0",
+  "keywords": [
+    "avatsaev",
+    "mobile",
+    "nativescript",
+    "{N}",
+    "tns",
+    "appbuilder",
+    "template",
+    "angular2"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/avatsaev/nativescript-master-detail-angular2.git"
+  },
   "nativescript": {
     "id": "com.vatsaev.nativescript-master-detail-angular2",
     "tns-ios": {
