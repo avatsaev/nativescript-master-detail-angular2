@@ -1,11 +1,10 @@
-# Nativescript master detail angular2 template 
+# Nativescript master detail Angular2 template 
 
 ## Usage
 
 ### Init
 
 ```
-
 tns create my-app-name --template https://github.com/avatsaev/nativescript-master-detail-angular2.git
 ```
 
@@ -13,5 +12,4 @@ tns create my-app-name --template https://github.com/avatsaev/nativescript-maste
 
 ```
 tns livesync ios --emulator --watch 
-
 ```
