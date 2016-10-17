@@ -1,0 +1,35 @@
+<ActionBar title="Home">
+  <NavigationButton text="Back" android.systemIcon="ic_menu_back"
+                    (tap)="onNavBtnTap()"></NavigationButton>
+</ActionBar>
+
+
+<GridLayout>
+
+
+  <StackLayout #initialContainer
+               class="initial-container">
+
+
+    <ListView [items]="countries" (itemTap)="showDetails($event)" rowHeight="44">
+
+      <template  let-country="item" let-i="index" let-odd="odd" let-even="even">
+
+=
+          <StackLayout horizontalAlignment="left" verticalAlignment="center" paddingLeft="20" orientation="horizontal">
+
+            <Label [text]="country"  class="label-item"></Label>
+
+
+          </StackLayout>
+
+
+      </template>
+
+    </ListView>
+
+  </StackLayout>
+
+
+
+</GridLayout>
